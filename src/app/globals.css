@@ -1,0 +1,88 @@
+/* CLAUDE IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+/* END CLAUDE IMPORTS */
+
+/* WARNING: Only modify this file inside the USER MODIFICATIONS section. DO NOT modify any other part of the file, or you may have a non-functional design. */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Page layout */
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Row and column layout */
+.row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .row {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+@media (min-width: 1024px) {
+  .col {
+    flex: 1;
+  }
+}
+
+.row-override {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+}
+
+@media (min-width: 1024px) {
+  .row-override {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.col-override {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+}
+
+@media (min-width: 1024px) {
+  .col-override {
+    flex: 1;
+  }
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+/* USER MODIFICATIONS */
+/* END USER MODIFICATIONS */
+
+/* CLAUDE CSS */
+ .classFontSize { font-size: 16px; } .classFontType { font-family: 'Inter', sans-serif; } .classHeaderLinkSize a { font-size: 18px; } .classHeaderFontType a { font-family: 'Inter', sans-serif; color: #000000; text-decoration: none; } .classFooterBackground { background-color: #2C3E50; } .classFooterLinkSize a { font-size: 14px; color: #ffffff; } .classButtonRounding { border-radius: 8px; } .classButtonBackground { background-color: #3498DB; color: #ffffff; border: none; } .classButtonFontType { font-family: 'Inter', sans-serif; } .classButtonFontSize { font-size: 16px; } .classInputRounding { border-radius: 6px; } .classInputBackground { background-color: #F8F9FA; border: 1px solid #E9ECEF; color: #000000; } .classInputFontSize { font-size: 15px; } 
+/* END CLAUDE CSS */
