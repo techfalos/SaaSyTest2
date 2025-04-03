@@ -1,0 +1,124 @@
+/* CLAUDE IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Open Sans&family=Montserrat&family=Raleway&display=swap');
+/* END CLAUDE IMPORTS */
+
+/* WARNING: Only modify this file inside the USER MODIFICATIONS section. DO NOT modify any other part of the file, or you may have a non-functional design. */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Page layout */
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Row and column layout */
+.row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .row {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+@media (min-width: 1024px) {
+  .col {
+    flex: 1;
+  }
+}
+
+.row-override {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+}
+
+@media (min-width: 1024px) {
+  .row-override {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.col-override {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+}
+
+@media (min-width: 1024px) {
+  .col-override {
+    flex: 1;
+  }
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+/* USER MODIFICATIONS */
+/* END USER MODIFICATIONS */
+
+/* CLAUDE CSS */
+body {
+  background: #F5F7F5;
+  color: #333333;
+  font-family: Open Sans, sans-serif;
+}
+
+h1 {
+  color: #2C5E1A;
+  font-family: Montserrat, sans-serif;
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+button {
+  background-color: #D12329;
+  color: #FFFFFF;
+  font-family: Montserrat, sans-serif;
+}
+
+.card {
+   background-color: #FFFFFF;
+   color: #333333;
+}
+
+.card h1 {
+  color: #2C5E1A;
+}
+
+
+/* END CLAUDE CSS */
