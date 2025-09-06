@@ -1,0 +1,12 @@
+
+export default function HowToMeasureView() {
+    const htmlContent = '<section class="measurement-guide">\n    <h1>Your Perfect Fit: Dress Measurement Guide</h1>\n\n    <p>Achieving the perfect dress fit starts with precise measurements. Follow our expert guide to ensure your dress looks and feels magnificent.</p>\n\n    <h2>Essential Measurement Tools</h2>\n    <ul>\n        <li>Flexible measuring tape</li>\n        <li>Full-length mirror</li>\n        <li>Comfortable, form-fitting undergarments</li>\n        <li>A helpful friend (optional but recommended)</li>\n    </ul>\n\n    <h2>Key Measurements</h2>\n    <ol>\n        <li>\n            <strong>Bust:</strong> Measure around the fullest part of your chest, keeping the tape parallel to the ground.\n        </li>\n        <li>\n            <strong>Waist:</strong> Find your natural waistline (typically the narrowest part of your torso) and measure around it.\n        </li>\n        <li>\n            <strong>Hips:</strong> Measure around the fullest part of your hips, approximately 7-9 inches below your waist.\n        </li>\n        <li>\n            <strong>Shoulder to Waist:</strong> Measure from the top of your shoulder down to your natural waistline.\n        </li>\n    </ol>\n\n    <h2>Measurement Tips</h2>\n    <p>For the most accurate sizing:</p>\n    <ul>\n        <li>Stand straight with good posture</li>\n        <li>Keep the measuring tape snug but not tight</li>\n        <li>Breathe normally during measurements</li>\n        <li>Wear minimal, form-fitting clothing</li>\n    </ul>\n\n    <h2>Fitting Recommendations</h2>\n    <p>Remember that <em>every body is unique</em>. If your measurements fall between standard sizes, we recommend selecting the larger size and having the dress professionally tailored for a perfect, personalized fit.</p>\n\n    <p>When in doubt, our expert stylists are always available to help you find your ideal dress size and style.</p>\n</section>';
+    
+    return (
+        <div 
+            
+            style={{ padding: '1.5rem', textAlign: 'left', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start' }}
+            dangerouslySetInnerHTML={{ __html: htmlContent }} 
+        />
+    );
+}
