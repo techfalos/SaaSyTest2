@@ -1,0 +1,134 @@
+
+import WrappedMenu from '@/components/wrapped_menu';
+
+// Menu data for Footer Menu
+const menuData = {
+  "id": "d5a68348-737f-4b34-a52d-897cf219e772",
+  "name": "Footer Menu",
+  "untouchable": false,
+  "font": "Roboto",
+  "direction": "vertical",
+  "fontSize": "text-base",
+  "items": [
+    {
+      "id": "8720f674-f2cf-4bc2-9e50-d2f5a8f1266b",
+      "name": "About",
+      "page": "about",
+      "menu": null,
+      "untouchable": false
+    },
+    {
+      "id": "8b72d77b-8aa8-4331-be5f-0792a9d5e23a",
+      "name": "Contact",
+      "page": "contact",
+      "menu": null,
+      "untouchable": false
+    },
+    {
+      "id": "50c3e0df-f1b4-47d5-8c27-113d8a79b560",
+      "name": "Terms of Service",
+      "page": "b5ddfbf3-d05f-4ba6-826f-cda452a3bc27",
+      "menu": null,
+      "untouchable": false
+    },
+    {
+      "id": "6746d5fd-79db-445d-991a-069da211a348",
+      "name": "Privacy Policy",
+      "page": "0f7a704e-3408-42b8-97fa-ee84d2c402bc",
+      "menu": null,
+      "untouchable": false
+    }
+  ]
+};
+
+// Pages data for URL resolution
+const pagesData = [
+  {
+    "id": "3d4050bd-9cc8-404f-8eb0-e0ec33278c74",
+    "name": "Dashboard"
+  },
+  {
+    "id": "eb594b19-ebe5-4bd8-9795-eb62f3de58b7",
+    "name": "Admin Dashboard"
+  },
+  {
+    "id": "home",
+    "name": "Home"
+  },
+  {
+    "id": "services",
+    "name": "Services"
+  },
+  {
+    "id": "service_detail",
+    "name": "Service Detail"
+  },
+  {
+    "id": "booking",
+    "name": "Book Session"
+  },
+  {
+    "id": "about",
+    "name": "About"
+  },
+  {
+    "id": "practitioners",
+    "name": "Our Practitioners"
+  },
+  {
+    "id": "practitioner_detail",
+    "name": "Practitioner Profile"
+  },
+  {
+    "id": "sound_library",
+    "name": "Sound Library"
+  },
+  {
+    "id": "wellness_resources",
+    "name": "Wellness Resources"
+  },
+  {
+    "id": "testimonials",
+    "name": "Testimonials"
+  },
+  {
+    "id": "contact",
+    "name": "Contact"
+  },
+  {
+    "id": "my_sessions",
+    "name": "My Sessions"
+  },
+  {
+    "id": "wellness_journal",
+    "name": "Wellness Journal"
+  },
+  {
+    "id": "admin_sessions",
+    "name": "Session Management"
+  },
+  {
+    "id": "admin_practitioners",
+    "name": "Practitioner Management"
+  },
+  {
+    "id": "admin_content",
+    "name": "Content Management"
+  },
+  {
+    "id": "b5ddfbf3-d05f-4ba6-826f-cda452a3bc27",
+    "name": "Terms of Service"
+  },
+  {
+    "id": "0f7a704e-3408-42b8-97fa-ee84d2c402bc",
+    "name": "Privacy Policy"
+  },
+  {
+    "id": "d0467735-83eb-4e1f-9853-c431fda1390c",
+    "name": "Login"
+  }
+];
+
+export default function FooterMenuView() {
+    return <WrappedMenu menu={menuData} pages={pagesData} />;
+}

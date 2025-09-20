@@ -1,0 +1,127 @@
+
+import WrappedMenu from '@/components/wrapped_menu';
+
+// Menu data for Header (Logged In)
+const menuData = {
+  "id": "b7583ea3-96a6-43a8-9213-f341ff1b7458",
+  "name": "Header (Logged In)",
+  "untouchable": false,
+  "font": "Roboto",
+  "direction": "horizontal",
+  "fontSize": "text-lg",
+  "items": [
+    {
+      "id": "85b67498-4611-48df-8265-6f54e9818f3e",
+      "name": "Sound Library",
+      "page": "sound_library",
+      "menu": null,
+      "untouchable": false
+    },
+    {
+      "id": "3a254753-18b7-4705-a875-ba5433f6e501",
+      "name": "My Sessions",
+      "page": "my_sessions",
+      "menu": null,
+      "untouchable": false
+    },
+    {
+      "id": "8abaecf8-5eda-419f-b987-65c1af73b198",
+      "name": "Wellness Journal",
+      "page": "wellness_journal",
+      "menu": null,
+      "untouchable": false
+    }
+  ]
+};
+
+// Pages data for URL resolution
+const pagesData = [
+  {
+    "id": "3d4050bd-9cc8-404f-8eb0-e0ec33278c74",
+    "name": "Dashboard"
+  },
+  {
+    "id": "eb594b19-ebe5-4bd8-9795-eb62f3de58b7",
+    "name": "Admin Dashboard"
+  },
+  {
+    "id": "home",
+    "name": "Home"
+  },
+  {
+    "id": "services",
+    "name": "Services"
+  },
+  {
+    "id": "service_detail",
+    "name": "Service Detail"
+  },
+  {
+    "id": "booking",
+    "name": "Book Session"
+  },
+  {
+    "id": "about",
+    "name": "About"
+  },
+  {
+    "id": "practitioners",
+    "name": "Our Practitioners"
+  },
+  {
+    "id": "practitioner_detail",
+    "name": "Practitioner Profile"
+  },
+  {
+    "id": "sound_library",
+    "name": "Sound Library"
+  },
+  {
+    "id": "wellness_resources",
+    "name": "Wellness Resources"
+  },
+  {
+    "id": "testimonials",
+    "name": "Testimonials"
+  },
+  {
+    "id": "contact",
+    "name": "Contact"
+  },
+  {
+    "id": "my_sessions",
+    "name": "My Sessions"
+  },
+  {
+    "id": "wellness_journal",
+    "name": "Wellness Journal"
+  },
+  {
+    "id": "admin_sessions",
+    "name": "Session Management"
+  },
+  {
+    "id": "admin_practitioners",
+    "name": "Practitioner Management"
+  },
+  {
+    "id": "admin_content",
+    "name": "Content Management"
+  },
+  {
+    "id": "b5ddfbf3-d05f-4ba6-826f-cda452a3bc27",
+    "name": "Terms of Service"
+  },
+  {
+    "id": "0f7a704e-3408-42b8-97fa-ee84d2c402bc",
+    "name": "Privacy Policy"
+  },
+  {
+    "id": "d0467735-83eb-4e1f-9853-c431fda1390c",
+    "name": "Login"
+  }
+];
+
+export default function HeaderLoggedInView() {
+    return <WrappedMenu menu={menuData} pages={pagesData} />;
+}
