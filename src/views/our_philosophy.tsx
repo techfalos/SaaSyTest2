@@ -1,0 +1,19 @@
+import React from 'react';
+
+interface GeneratedOurPhilosophyViewProps {
+  isContainer?: boolean;
+}
+
+export default function GeneratedOurPhilosophyView({ isContainer = false }: GeneratedOurPhilosophyViewProps){
+  const useCard = false;
+  return (
+    <div className={`${useCard ? "card" : "text-content"} ${!useCard ? "opacity-80" : ""}`} style={{ 
+      margin: '5% 10%',
+      padding: useCard ? undefined : '1.5rem',
+      borderRadius: useCard ? undefined : '0.5rem',
+      backgroundColor: "#000000"
+    }}>
+      <div className="rtext-content" dangerouslySetInnerHTML={{__html: "<section class=\"wellness-section\">\n    <h1>Harmonizing Health: The Vitalisona Approach to Sound Healing</h1>\n    \n    <h2>Bridging Ancient Wisdom and Modern Science</h2>\n    \n    <p>At Vitalisona, we believe that healing is a profound journey of reconnection—between body, mind, and the intricate vibrations that permeate our universe. Our holistic approach to sound therapy draws from centuries of traditional healing practices while incorporating cutting-edge scientific research in vibrational medicine.</p>\n    \n    <h2>The Science of Vibrational Wellness</h2>\n    \n    <p>Every cell in our body resonates with a unique frequency. <strong>Vitalisona's sound healing techniques</strong> are designed to restore optimal cellular harmony, helping to:</p>\n    \n    <ul>\n        <li>Reduce stress and anxiety</li>\n        <li>Enhance emotional balance</li>\n        <li>Promote natural healing processes</li>\n        <li>Restore energetic alignment</li>\n    </ul>\n    \n    <h2>Our Holistic Philosophy</h2>\n    \n    <p>We recognize that wellness is not merely the absence of disease, but a dynamic state of vibrant, integrated health. <em>Sound is not just something we hear—it's a transformative energy that can realign our entire being.</em></p>\n    \n    <h2>Ancient Wisdom, Modern Application</h2>\n    \n    <p>Vitalisona integrates time-honored healing traditions from cultures worldwide, including:</p>\n    \n    <ol>\n        <li>Tibetan singing bowl practices</li>\n        <li>Indigenous sound ceremony techniques</li>\n        <li>Vedic sound healing principles</li>\n        <li>Contemporary acoustic therapy research</li>\n    </ol>\n    \n    <h2>Personalized Healing Frequencies</h2>\n    \n    <p>Our trained practitioners understand that each individual's healing journey is unique. Through personalized sound therapy sessions, <strong>Vitalisona</strong> creates customized vibrational experiences that address your specific physical, emotional, and energetic needs.</p>\n    \n    <p>Discover the profound healing potential of sound. Welcome to a new paradigm of wellness—welcome to Vitalisona.</p>\n</section>" }} />
+    </div>
+  );
+}
