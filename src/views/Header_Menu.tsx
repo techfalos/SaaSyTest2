@@ -1,0 +1,149 @@
+
+import WrappedMenu from '@/components/wrapped_menu';
+
+// Menu data for Header Menu
+const menuData = {
+  "id": "27a86c1a-235f-4c49-82e8-f8c977b5f245",
+  "name": "Header Menu",
+  "untouchable": false,
+  "font": "Roboto",
+  "direction": "horizontal",
+  "fontSize": "text-lg",
+  "items": [
+    {
+      "id": "3984668d-dd36-4333-a997-e35114790e57",
+      "name": "About",
+      "page": "about",
+      "menu": null,
+      "untouchable": false
+    },
+    {
+      "id": "15fe2298-c61c-48cd-9e34-083b7716e741",
+      "name": "Contact",
+      "page": "contact",
+      "menu": null,
+      "untouchable": false,
+      "hiddenOnDesktop": true
+    },
+    {
+      "id": "5dcd6955-f351-4376-a207-15f596554731",
+      "name": "Our Practitioners",
+      "page": "practitioners",
+      "menu": null,
+      "untouchable": false
+    },
+    {
+      "id": "8987f66e-4388-4928-ae89-1e170424c5ab",
+      "name": "Services",
+      "page": "services",
+      "menu": null,
+      "untouchable": false
+    },
+    {
+      "id": "bbe20bcb-061f-41f5-a66b-04d748baaa0a",
+      "name": "Testimonials",
+      "page": "testimonials",
+      "menu": null,
+      "untouchable": false
+    },
+    {
+      "id": "32017ca0-c9a0-407c-a517-006b5d2da5f9",
+      "name": "Wellness Resources",
+      "page": "wellness_resources",
+      "menu": null,
+      "untouchable": false
+    }
+  ]
+};
+
+// Pages data for URL resolution
+const pagesData = [
+  {
+    "id": "3d4050bd-9cc8-404f-8eb0-e0ec33278c74",
+    "name": "Dashboard"
+  },
+  {
+    "id": "eb594b19-ebe5-4bd8-9795-eb62f3de58b7",
+    "name": "Admin Dashboard"
+  },
+  {
+    "id": "home",
+    "name": "Home"
+  },
+  {
+    "id": "services",
+    "name": "Services"
+  },
+  {
+    "id": "service_detail",
+    "name": "Service Detail"
+  },
+  {
+    "id": "booking",
+    "name": "Book Session"
+  },
+  {
+    "id": "about",
+    "name": "About"
+  },
+  {
+    "id": "practitioners",
+    "name": "Our Practitioners"
+  },
+  {
+    "id": "practitioner_detail",
+    "name": "Practitioner Profile"
+  },
+  {
+    "id": "sound_library",
+    "name": "Sound Library"
+  },
+  {
+    "id": "wellness_resources",
+    "name": "Wellness Resources"
+  },
+  {
+    "id": "testimonials",
+    "name": "Testimonials"
+  },
+  {
+    "id": "contact",
+    "name": "Contact"
+  },
+  {
+    "id": "my_sessions",
+    "name": "My Sessions"
+  },
+  {
+    "id": "wellness_journal",
+    "name": "Wellness Journal"
+  },
+  {
+    "id": "admin_sessions",
+    "name": "Session Management"
+  },
+  {
+    "id": "admin_practitioners",
+    "name": "Practitioner Management"
+  },
+  {
+    "id": "admin_content",
+    "name": "Content Management"
+  },
+  {
+    "id": "b5ddfbf3-d05f-4ba6-826f-cda452a3bc27",
+    "name": "Terms of Service"
+  },
+  {
+    "id": "0f7a704e-3408-42b8-97fa-ee84d2c402bc",
+    "name": "Privacy Policy"
+  },
+  {
+    "id": "d0467735-83eb-4e1f-9853-c431fda1390c",
+    "name": "Login"
+  }
+];
+
+export default function HeaderMenuView() {
+    return <WrappedMenu menu={menuData} pages={pagesData} />;
+}

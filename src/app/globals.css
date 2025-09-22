@@ -1,0 +1,224 @@
+/* CLAUDE IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Source Sans 3&family=DM Serif Display&family=DM Serif Display&display=swap');
+/* END CLAUDE IMPORTS */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/poppins.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('/nunito.ttf') format('truetype');
+}
+
+body {
+  background-color: #f9f9f9;
+  font-family: Roboto, sans-serif;
+}
+
+h1, h2 {
+  font-family: var(--font-geist-sans);
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+/* Enhanced input and textarea styles */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="url"],
+input[type="tel"],
+input[type="search"],
+select {
+  @apply px-4 py-3 border-2 border-gray-200 rounded-lg transition-all duration-200 ease-in-out;
+  @apply focus:border-blue-500 focus:ring-4 focus:ring-blue-100 focus:outline-none;
+  @apply hover:border-gray-300;
+  @apply bg-white text-gray-800 placeholder-gray-400;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Enhanced focus states with better visual feedback */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="url"]:focus,
+input[type="tel"]:focus,
+input[type="search"]:focus,
+select:focus {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+}
+
+/* Disabled state styling */
+input:disabled,
+textarea:disabled,
+select:disabled {
+  @apply bg-gray-50 border-gray-200 text-gray-500 cursor-not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Error state styling */
+input.error,
+textarea.error,
+select.error {
+  @apply border-red-400 focus:border-red-500 focus:ring-red-100;
+}
+
+/* Textarea specific enhancements */
+textarea {
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+
+/* Select dropdown styling */
+select {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  padding-right: 40px;
+  appearance: none;
+}
+
+
+.useSpecialFont {
+  font-family: 'Poppins', sans-serif;
+}
+
+.useNunito {
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Slide down animation for top tray */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideDown {
+  animation: slideDown 0.5s ease-out forwards;
+}
+
+/* Fade out animation for closing tray */
+@keyframes slideUp {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+.animate-slideUp {
+  animation: slideUp 0.3s ease-in forwards;
+}
+
+/* CLAUDE CSS */
+body {
+  background: linear-gradient(to top right, #f0f0f0, #18181b);
+  color: #d4d4d8;
+  font-family: Source Sans 3, sans-serif;
+  font-size: 0.875rem;
+}
+
+h1 {
+  color: #fafafa;
+  font-family: DM Serif Display, sans-serif;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: calc(1.5rem * 0.85);
+  font-weight: 800;
+}
+
+h3 {
+  font-size: calc(1.5rem * 0.7);
+  font-weight: 600;
+}
+
+button {
+  background-color: #ef4444;
+  color: #ffffff;
+  font-family: DM Serif Display, sans-serif;
+  border-radius: 0.375rem;
+}
+
+
+/* PER-VIEW STYLES */
+
+.view-philosophy_section-title h1,
+.view-philosophy_section-title h2,
+.view-philosophy_section-title h3,
+.view-philosophy_section-title .card h1,
+.view-philosophy_section-title .card h2,
+.view-philosophy_section-title .card h3 {
+    color: #374151 !important;
+}
+
+.view-philosophy_image-title h1,
+.view-philosophy_image-title h2,
+.view-philosophy_image-title h3,
+.view-philosophy_image-title .card h1,
+.view-philosophy_image-title .card h2,
+.view-philosophy_image-title .card h3 {
+    color: #111827 !important;
+}
+
+.view-benefits_section-title h1,
+.view-benefits_section-title h2,
+.view-benefits_section-title h3,
+.view-benefits_section-title .card h1,
+.view-benefits_section-title .card h2,
+.view-benefits_section-title .card h3 {
+    color: #374151 !important;
+}
+
+.view-featured_services-title h1,
+.view-featured_services-title h2,
+.view-featured_services-title h3,
+.view-featured_services-title .card h1,
+.view-featured_services-title .card h2,
+.view-featured_services-title .card h3 {
+    color: #111827 !important;
+}
+
+.view-philosophy_section-title h1,
+.view-philosophy_section-title h2,
+.view-philosophy_section-title h3,
+.view-philosophy_section-title .card h1,
+.view-philosophy_section-title .card h2,
+.view-philosophy_section-title .card h3 {
+    color: #374151 !important;
+}
+
+.view-testimonials_showcase-title h1,
+.view-testimonials_showcase-title h2,
+.view-testimonials_showcase-title h3,
+.view-testimonials_showcase-title .card h1,
+.view-testimonials_showcase-title .card h2,
+.view-testimonials_showcase-title .card h3 {
+    color: #ffffff !important;
+}
+/* END PER-VIEW STYLES */
+
+
+/* END CLAUDE CSS */
