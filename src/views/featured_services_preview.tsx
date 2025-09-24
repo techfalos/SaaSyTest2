@@ -1,0 +1,12 @@
+import React from 'react';
+
+interface GeneratedFeaturedServicesPreviewViewProps {
+  isContainer?: boolean;
+}
+
+export default function GeneratedFeaturedServicesPreviewView({ isContainer = false }: GeneratedFeaturedServicesPreviewViewProps){
+  const useCard = false;
+  return (
+      <div className="rtext-content" dangerouslySetInnerHTML={{__html: "<section class=\"wellness-services\">\n    <h1>Discover Holistic Healing with Vitalisona</h1>\n    \n    <h2>Transformative Sound Healing Experiences</h2>\n    \n    <p>At Vitalisona, we believe in the profound healing power of sound vibrations to restore balance, reduce stress, and promote deep wellness. Our comprehensive approach integrates ancient sound healing techniques with modern therapeutic practices.</p>\n    \n    <div class=\"service-overview\">\n        <h3>Featured Healing Services</h3>\n        \n        <div class=\"service-category\">\n            <h4>Sound Bath Experiences</h4>\n            <p>Immerse yourself in our signature <strong>Vitalisona Sound Immersion</strong> sessions. Using carefully selected instruments like Tibetan singing bowls, crystal bowls, gongs, and percussion, our practitioners create a multi-layered sonic environment that encourages deep relaxation and energetic recalibration.</p>\n        </div>\n        \n        <div class=\"service-category\">\n            <h4>Individual Sound Therapy Sessions</h4>\n            <p>Our personalized one-on-one sound healing sessions are tailored to your unique energetic needs. Each <em>Vitalisona Resonance Healing</em> experience is designed to address specific physical, emotional, and spiritual challenges through precise vibrational interventions.</p>\n        </div>\n        \n        <div class=\"service-category\">\n            <h4>Group Wellness Workshops</h4>\n            <p>Join our transformative group sound healing workshops, where collective energy amplifies individual healing potential. From beginner-friendly introductory sessions to advanced vibrational meditation experiences, Vitalisona offers a supportive community environment for holistic growth.</p>\n        </div>\n    </div>\n    \n    <p>Our mission at Vitalisona is to provide accessible, scientifically-informed, and spiritually-grounded sound healing experiences that support your journey toward optimal well-being.</p>\n</section>" }} />
+  );
+}

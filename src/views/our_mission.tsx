@@ -1,0 +1,12 @@
+import React from 'react';
+
+interface GeneratedOurMissionViewProps {
+  isContainer?: boolean;
+}
+
+export default function GeneratedOurMissionView({ isContainer = false }: GeneratedOurMissionViewProps){
+  const useCard = false;
+  return (
+      <div className="rtext-content" dangerouslySetInnerHTML={{__html: "<div class=\"wellness-mission-section\">\n    <h1>Harmonizing Healing: The Vitalisona Journey</h1>\n    \n    <h2>Restoring Balance Through Sound Vibrations</h2>\n    \n    <p>At Vitalisona, we believe that healing is not just a process, but a profound journey of reconnection—with ourselves, our bodies, and the ancient wisdom of sound. Our mission transcends traditional wellness approaches by harnessing the transformative power of therapeutic sound vibrations.</p>\n    \n    <p><strong>Our Holistic Approach</strong> integrates centuries-old healing practices with cutting-edge therapeutic techniques. We understand that true wellness encompasses mind, body, and spirit, and sound is the universal language that can harmonize these essential aspects of human experience.</p>\n    \n    <h2>The Science and Spirit of Sound Healing</h2>\n    \n    <ul>\n        <li>Scientifically calibrated sound frequencies</li>\n        <li>Personalized healing resonance techniques</li>\n        <li>Compassionate, expertly guided sessions</li>\n        <li>Integrative wellness philosophy</li>\n    </ul>\n    \n    <p>Vitalisona stands at the intersection of ancient wisdom and modern therapeutic practices. Our practitioners are dedicated to creating immersive healing experiences that help individuals release stress, restore energy, and rediscover inner balance.</p>\n    \n    <h2>Our Core Principles</h2>\n    \n    <ol>\n        <li><em>Holistic Healing</em>: Treating the whole person, not just symptoms</li>\n        <li><em>Personalized Approach</em>: Unique sound journeys for individual needs</li>\n        <li><em>Profound Transformation</em>: Facilitating deep emotional and physical restoration</li>\n    </ol>\n    \n    <p>Every Vitalisona session is a sacred opportunity to realign, recharge, and rediscover your innate capacity for healing. We invite you to experience the profound potential of sound as a pathway to wellness, balance, and profound personal transformation.</p>\n</div>" }} />
+  );
+}

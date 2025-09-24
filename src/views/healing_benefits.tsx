@@ -1,0 +1,12 @@
+import React from 'react';
+
+interface GeneratedHealingBenefitsViewProps {
+  isContainer?: boolean;
+}
+
+export default function GeneratedHealingBenefitsView({ isContainer = false }: GeneratedHealingBenefitsViewProps){
+  const useCard = false;
+  return (
+      <div className="rtext-content" dangerouslySetInnerHTML={{__html: "<div class=\"wellness-section\">\n    <h1>Discover Healing Through Sound with Vitalisona</h1>\n    <h2>Transformative Sound Vibration Therapy</h2>\n    \n    <p>At Vitalisona, we believe in the profound healing power of sound vibrations - a holistic approach to wellness that reconnects your body, mind, and spirit through carefully crafted acoustic experiences.</p>\n\n    <div class=\"benefits-grid\">\n        <div class=\"benefit-column\">\n            <h3>Stress Reduction</h3>\n            <p>Our specialized sound healing techniques help calm the nervous system, reducing cortisol levels and promoting deep relaxation. Vitalisona's unique vibrational frequencies create an immediate sense of tranquility.</p>\n        </div>\n\n        <div class=\"benefit-column\">\n            <h3>Enhanced Sleep Quality</h3>\n            <p>By realigning your body's natural rhythms, Vitalisona's sound therapies facilitate deeper, more restorative sleep. Our targeted sound frequencies help quiet mental chatter and encourage peaceful slumber.</p>\n        </div>\n\n        <div class=\"benefit-column\">\n            <h3>Emotional Rebalancing</h3>\n            <p>Sound vibrations have an extraordinary capacity to process and release emotional blockages. Vitalisona's therapeutic approach supports emotional healing, helping you achieve greater inner harmony.</p>\n        </div>\n\n        <div class=\"benefit-column\">\n            <h3>Physical Wellness</h3>\n            <p>Our scientifically-designed sound treatments stimulate cellular regeneration, support immune function, and promote holistic physical healing. Experience the transformative power of intentional vibrations.</p>\n        </div>\n    </div>\n\n    <blockquote>\n        <strong>\"Sound is the medicine of the future\"</strong> - Vitalisona Healing Philosophy\n    </blockquote>\n\n    <p>Through carefully curated sound frequencies, Vitalisona offers a revolutionary approach to wellness that transcends traditional healing methods. Our practitioners understand that every individual's healing journey is unique, and we customize our sound therapy to meet your specific needs.</p>\n</div>" }} />
+  );
+}
