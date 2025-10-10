@@ -1,0 +1,12 @@
+import React from 'react';
+
+interface GeneratedMyApproachViewProps {
+  isContainer?: boolean;
+}
+
+export default function GeneratedMyApproachView({ isContainer = false }: GeneratedMyApproachViewProps){
+  const useCard = false;
+  return (
+      <div className="rtext-content" dangerouslySetInnerHTML={{__html: "<section style=\"width: 100%; margin: 48px 0; padding: 48px; background-color: #f0f8ff;\">\n    <h1 style=\"text-align: center; margin-bottom: 32px;\">My Video: Capturing Authentic Moments with Precision</h1>\n    \n    <article style=\"width: 100%; padding: 40px; background-color: #ffffff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);\">\n        <h2 style=\"margin-bottom: 24px;\">Our Creative Videography Approach</h2>\n        \n        <div style=\"width: 100%; display: flex; gap: 32px; align-items: center; margin-bottom: 32px;\">\n            <div style=\"flex: 1; padding: 24px; background-color: #2c3e50; color: #ffffff; border-radius: 8px;\">\n                <h3 style=\"margin-bottom: 16px;\">Shooting Style</h3>\n                <p style=\"line-height: 1.6;\">At My Video, we believe in a dynamic, storytelling approach to videography. Our shooting style combines cinematic techniques with candid documentary methods, ensuring each frame captures genuine emotion and narrative depth.</p>\n            </div>\n            \n            <div style=\"flex: 1; padding: 24px; background-color: #0066cc; color: #ffffff; border-radius: 8px;\">\n                <h3 style=\"margin-bottom: 16px;\">Client Collaboration</h3>\n                <p style=\"line-height: 1.6;\">We view every project as a collaborative journey. By deeply understanding our clients' vision, personalities, and unique stories, we craft videos that resonate authentically and meaningfully.</p>\n            </div>\n        </div>\n        \n        <div style=\"width: 100%; padding: 32px; background-color: #e8f4f8; border-radius: 8px;\">\n            <h3 style=\"margin-bottom: 24px;\">Commitment to Detail</h3>\n            <ul style=\"list-style-type: disc; padding-left: 32px; line-height: 1.8;\">\n                <li>Meticulous pre-production planning</li>\n                <li>State-of-the-art equipment and techniques</li>\n                <li>Precision in capturing subtle, meaningful moments</li>\n                <li>Expert post-production editing</li>\n                <li>Personalized storytelling approach</li>\n            </ul>\n        </div>\n    </article>\n</section>" }} />
+  );
+}
