@@ -1,0 +1,12 @@
+import React from 'react';
+
+interface GeneratedOurExpertiseViewProps {
+  isContainer?: boolean;
+}
+
+export default function GeneratedOurExpertiseView({ isContainer = false }: GeneratedOurExpertiseViewProps){
+  const useCard = false;
+  return (
+      <div className="rtext-content" dangerouslySetInnerHTML={{__html: "<section style=\"width: 100%;\">\n    <div style=\"margin-top: 32px; margin-bottom: 48px; padding: 48px;\">\n        <h1>The Artistry of Victorian Era Fashion Expertise</h1>\n        <p style=\"font-size: 18px; line-height: 1.6;\">At <strong>Victorian Era</strong>, our passion for historical fashion transcends mere costume reproduction. We are dedicated scholars and artisans who specialize in meticulously reconstructing the intricate sartorial landscape of the British Victorian period, spanning from 1837 to 1901. Our team's expertise encompasses the nuanced evolution of fashion across distinct sub-periods, including the early Romantic era, the mid-century industrial transformation, and the elaborate late Victorian aesthetic.</p>\n    </div>\n\n    <div style=\"background-color: #fefbff; padding: 40px; margin-bottom: 48px; border-radius: 12px;\">\n        <h2>Precision in Historical Authenticity</h2>\n        <p style=\"font-size: 16px; line-height: 1.7;\">Our deep understanding extends beyond visual recreation. We comprehend the complex social stratification reflected in Victorian dress, where every stitch, fabric choice, and design element signified one's social standing. From the refined silk gowns of aristocratic ladies to the practical cotton dresses of working-class women, <strong>Victorian Era</strong> ensures absolute historical accuracy in construction techniques, material selection, and stylistic nuances.</p>\n    </div>\n\n    <div style=\"padding: 40px; margin-bottom: 48px;\">\n        <h2>Craftsmanship and Research</h2>\n        <p style=\"font-size: 16px; line-height: 1.7;\">Each garment we produce is the result of extensive archival research, consultation with textile historians, and a commitment to traditional manufacturing methods. We employ artisans skilled in period-specific techniques like hand-stitching, corsetry construction, and intricate embellishment work. Our dedication ensures that every piece from <strong>Victorian Era</strong> is not just a costume, but a living historical artifact.</p>\n    </div>\n</section>" }} />
+  );
+}
